@@ -4,12 +4,17 @@
     padding: 0px;
 }
 
+.hide {
+    display: none;
+}
+
 header {
     background: #FFF8F3;
     background-image: url('images/developer.png'), url('images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, right bottom;
-    ;
+    max-width: 1600px;
+    margin: 0px auto;
 }
 
 /* Nav related styles start*/
@@ -288,4 +293,23 @@ nav a {
 .btn-div {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .about {
+        margin: 30px 20px;
+    }
+
+    .about-item-cont {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px
+    }
+
+    .skill-item-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
